@@ -1,0 +1,46 @@
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["postgresqlExtensions"]
+}
+
+datasource db {
+  provider   = "postgresql"
+  url        = env("DATABASE_URL")
+  extensions = [vector]
+}
+
+model Payer {
+  id                String   @id @default(uuid())
+  name              String
+  appealWindowDays  Int
+  policies          Policy[]
+  claims            Claim[]
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+}
+
+model Policy {
+  id        String                 @id @default(uuid())
+  payerId   String
+  payer     Payer                  @relation(fields: [payerId], references: [id])
+  name      String
+  content   String
+  embedding Unsupported("vector(1536)")?
+  createdAt DateTime               @default(now())
+  updatedAt DateTime               @updatedAt
+}
+
+model Claim {
+  id            String   @id @default(uuid())
+  payerId       String
+  payer         Payer    @relation(fields: [payerId], references: [id])
+  cptCode       String
+  diagnosisCode String
+  serviceDate   DateTime
+  status        String   @default("pending") // pending, scrubbed, denied, appealed
+  riskScore     Float?
+  denialReason  String?
+  appealDraft   String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
