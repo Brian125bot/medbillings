@@ -9,7 +9,7 @@
 
 ## Phase 2: Database Schema & Management
 - [x] Task: Initialize Prisma and define the schema for `Payer`, `Policy` (with `vector` type), and `Claim` models. d66ffe1
-- [ ] Task: Create a migration to apply the schema to the Neon database.
+- [x] Task: Create a migration to apply the schema to the Neon database. 5c02bba
 - [ ] Task: Create a seed script to populate initial `Payer` data and sample `Policy` embeddings (using a dummy embedding function for now or a real one if feasible).
 - [ ] Task: Conductor - User Manual Verification 'Phase 2: Database Schema & Management' (Protocol in workflow.md)
 
