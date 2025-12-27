@@ -5,7 +5,7 @@
 - [x] Task: Set up Vercel deployment and link the project. f977011
 - [x] Task: Provision Neon PostgreSQL database with `pgvector` extension via `neonctl` (or manual setup if CLI unavailable). e2154fd
 - [x] Task: Configure environment variables for database connection (`DATABASE_URL`) and Gemini API (`GEMINI_API_KEY`) in Vercel and locally. acb6a0f
-- [ ] Task: Conductor - User Manual Verification 'Phase 1: Project Initialization & Infrastructure Setup' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 1: Project Initialization & Infrastructure Setup' (Protocol in workflow.md) 5b5bf29
 
 ## Phase 2: Database Schema & Management
 - [ ] Task: Initialize Prisma and define the schema for `Payer`, `Policy` (with `vector` type), and `Claim` models.
