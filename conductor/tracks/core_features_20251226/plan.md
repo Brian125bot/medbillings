@@ -8,7 +8,7 @@
 - [x] Task: Conductor - User Manual Verification 'Phase 1: Project Initialization & Infrastructure Setup' (Protocol in workflow.md) 5b5bf29
 
 ## Phase 2: Database Schema & Management
-- [ ] Task: Initialize Prisma and define the schema for `Payer`, `Policy` (with `vector` type), and `Claim` models.
+- [x] Task: Initialize Prisma and define the schema for `Payer`, `Policy` (with `vector` type), and `Claim` models. d66ffe1
 - [ ] Task: Create a migration to apply the schema to the Neon database.
 - [ ] Task: Create a seed script to populate initial `Payer` data and sample `Policy` embeddings (using a dummy embedding function for now or a real one if feasible).
 - [ ] Task: Conductor - User Manual Verification 'Phase 2: Database Schema & Management' (Protocol in workflow.md)
