@@ -3,7 +3,7 @@
 ## Phase 1: Project Initialization & Infrastructure Setup
 - [x] Task: Initialize Next.js project with TypeScript, Tailwind CSS, and Shadcn/UI. 1788bfc
 - [x] Task: Set up Vercel deployment and link the project. f977011
-- [ ] Task: Provision Neon PostgreSQL database with `pgvector` extension via `neonctl` (or manual setup if CLI unavailable).
+- [x] Task: Provision Neon PostgreSQL database with `pgvector` extension via `neonctl` (or manual setup if CLI unavailable). e2154fd
 - [ ] Task: Configure environment variables for database connection (`DATABASE_URL`) and Gemini API (`GEMINI_API_KEY`) in Vercel and locally.
 - [ ] Task: Conductor - User Manual Verification 'Phase 1: Project Initialization & Infrastructure Setup' (Protocol in workflow.md)
 
