@@ -1,0 +1,8 @@
+{
+"track_id": "core_features_20251226",
+"type": "feature",
+"status": "new",
+"created_at": "2025-12-26T12:00:00Z",
+"updated_at": "2025-12-26T12:00:00Z",
+"description": "Build the core features for medical claim scrubbing and automated insurance appeals, including infrastructure setup and database schema."
+}
